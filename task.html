@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="./task.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="todo-outer">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-sm-12 col-md-8">
+              <h1 class="d-flex justify-content-center">TODO list</h1>
+              <div class="todo-inner">
+                <div class="form-row">
+                  <div class="col-8 mr-sm-2">
+                    <input type="text" class="form-control" placeholder="Enter your task" id="addTask" />
+                    <input type="hidden" id="saveIndex">
+                  </div>
+                  <button type="button" class="btn btn-success mr-sm-2" id="addTaskBtn">
+                    Add Task
+                  </button>
+                  <button type="button" class="btn btn-success mr-sm-2" id="saveTaskBtn" style="display:none;">
+                    Save Task
+                  </button>
+                </div>
+                <div class="to-do-output">
+                  <table class="table table-striped mt-3 mb-0" id="addedTaskList">
+                    
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <script src="./task.js"></script>
+</body>
+</html>
